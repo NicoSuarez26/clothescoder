@@ -1,3 +1,9 @@
-body{
-    color: red;
-}
+@use "./base/reset";
+@use "./base/estilos-generales";
+@use "./components/cajas";
+@use "./layout/header";
+@use "./layout/principal";
+@use "./components/formularios";
+@use "./layout/footer";
+@use "./layout/mediaqueries";
+

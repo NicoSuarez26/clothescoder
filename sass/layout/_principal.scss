@@ -1,0 +1,71 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+main{
+    background-color: $bg-main;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100%;
+    flex-grow: 1;
+}
+main section{
+    padding: 30px 40px;
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @include flex-base(center, null);
+    
+}
+main h3{
+    color: black;
+    background-color: rgb(202, 226, 244);
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    margin-top: $margin-chiquito;
+    margin-bottom: $margin-chiquito;
+}
+main a{
+    color: rgb(48, 47, 47);
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: $tamaño-width;
+    height: auto;
+    display: block;
+}
+.boton-compra{
+    background-color: $bg-boton-compra;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition:all 0.3s ease;
+    border-radius: $borde-radio;
+    margin-top: 10px;
+}
+.boton-compra:hover{
+    background-color: $bg-boton-compra-hover;
+    border-radius: $borde-radio;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+.boton-compra:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.nosotros{
+    font-family: $fuente-body-nosotros;
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    padding: 40px;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@keyframes aparecer{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+header{
+    background-color: $bg-header-footer;
+    @include flex-base(space-between, center);
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(1, 1, 1);
+    font-size: 45px;
+    margin: $margin-chiquito;
+}

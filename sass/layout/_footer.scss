@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer{
+    background-color: $bg-header-footer;
+    padding: 20px
+}
+
+.footer-box{
+    background-color: $bg-header-footer;
+    @include flex-base(null,center);
+    flex-direction: column;
+    gap: 20px;
+    height: 40vh;
+    font-size: 20px;
+}
+footer div h3{
+    text-align: center;
+}
+iframe{
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}

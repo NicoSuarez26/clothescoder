@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.caja{
+    transition: all 0.5s ease;
+    width: $tamaño-width;
+    max-width: 400px;
+    @include flex-base(null, center);
+    flex-direction: column;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: $bg-caja;
+    margin: $margin-chiquito;
+}
+.caja:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
