@@ -68,6 +68,36 @@ main section {
   padding: 30px 40px;
 }
 
+#carouselExample {
+  max-width: 450px;
+  margin: 40px auto;
+  background-color: rgb(218, 212, 178); 
+  padding: 15px;
+  border-radius: 5px;
+}
+#carouselExample img {
+  height: 600px;
+  object-fit: cover;
+}
+#carouselExamplem {
+  max-width: 450px;
+  margin: 40px auto;
+  background-color: rgb(218, 212, 178); 
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-control-next-icon{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
@@ -214,7 +244,6 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  height: 40vh;
   font-size: 20px;
 }
 
@@ -238,7 +267,7 @@ footer ul li a {
   color: black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -247,6 +276,21 @@ footer ul li a {
     display: grid;
     max-width: 100%;
     width: 350px;
+  }
+  .carrusel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+  #carouselExample {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #carouselExamplem {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   footer div {
     display: grid;
