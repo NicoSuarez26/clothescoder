@@ -11,7 +11,6 @@ footer{
     @include flex-base(null,center);
     flex-direction: column;
     gap: 20px;
-    height: 40vh;
     font-size: 20px;
 }
 footer div h3{
