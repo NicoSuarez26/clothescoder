@@ -86,6 +86,11 @@ main section {
   object-fit: cover;
 }
 
+#carouselExamplem img {
+  height: 600px;
+  object-fit: cover;
+}
+
 #carouselExamplem {
   max-width: 450px;
   margin: 40px auto;
@@ -305,20 +310,30 @@ footer div h3 {
   text-align: center;
 }
 
+.social {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social img:hover {
+  transform: scale(1.15);
+}
+
 iframe {
   max-width: 100%;
   width: 400px;
   height: 200px;
   display: inline-block;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: black;
 }
 
 @media (max-width: 768px) {
